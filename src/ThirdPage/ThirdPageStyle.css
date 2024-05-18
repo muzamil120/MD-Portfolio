@@ -1,0 +1,136 @@
+.ThirdPage {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    margin-top: 200px;
+    background-color: var(--bg-clr);
+  }
+  
+  .t-hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .skill-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 150px;
+  }
+  
+  .skill-name span {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+  }
+  .skill-name span img{
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  
+  .progress-bg {
+    background-color: #ffffff;
+    width: 370px;
+    height: 13px;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .skill-name h5{
+    margin-left: 90px;
+  }
+  
+  .progress-bg p {
+    background: linear-gradient(45deg, #43b1da, #8215f0);
+    height: 100%;
+    border-radius: 7px;
+    transition: width 0.3s ease;
+  }
+  .progress-bg p::after{
+    content: attr();
+    color:var(--bg-clr);
+    font-size: small;
+    text-align: center;
+    position: absolute;
+    top:-3px;
+    font-weight: 500;
+  }
+ 
+  .p1 {
+    width: 40%;
+  }
+  .p1::after{
+    content: '40%';
+    right:50%;
+  }
+  
+  .p2 {
+    width: 50%;
+  }
+  .p2::after{
+    content: '50%';
+    right:40%
+  }
+  
+  .p3 {
+    width: 60%;
+  }
+  .p3::after{
+    content: '60%';
+    right:30%
+  }
+  
+  .p4 {
+    width: 70%;
+  }
+  .p4::after{
+    content: '70%';
+    right:20%
+  }
+  
+  .skill-img img {
+    margin: 15px;
+    margin-top: 40px;
+  }
+  
+  .col-1, .col-2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 180px;
+
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .t-hero {
+      flex-direction: column;
+    }
+  
+    .skill-name {
+      margin-left: 20px;
+      margin-top: 40px;
+    }
+    .skill-name h5 ,  .skill-name img{
+      margin-left: 20px;
+    }
+    .skill-name h5{
+      margin-left: 90px;
+    }
+  
+    .skill-img img {
+      margin-top: 50px;
+      height: 200px;
+      width: 200px;
+
+    }
+  
+    .col-1, .col-2 {
+      flex-direction: column;
+      margin-left: 200px;
+    }
+  }
+  
